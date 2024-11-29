@@ -1,0 +1,48 @@
+CREATE DATABASE dental_clinic_management;
+
+USE dental_clinic_management;
+
+CREATE TABLE users (
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    role ENUM('admin', 'doctor', 'staff') NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE patients (
+    patient_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    phone VARCHAR(15),
+    email VARCHAR(100),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE appointments (
+    appointment_id INT AUTO_INCREMENT PRIMARY KEY,
+    doctor_id INT NOT NULL,
+    patient_id INT NOT NULL,
+    date DATE NOT NULL,
+    time TIME NOT NULL,
+    FOREIGN KEY (doctor_id) REFERENCES users(user_id),
+    FOREIGN KEY (patient_id) REFERENCES patients(patient_id)
+);
+
+CREATE TABLE stock (
+    stock_id INT AUTO_INCREMENT PRIMARY KEY,
+    product_name VARCHAR(100) NOT NULL,
+    quantity INT NOT NULL,
+    expiration_date DATE
+);
+
+CREATE TABLE prosthetics (
+    prosthetic_id INT AUTO_INCREMENT PRIMARY KEY,
+    type VARCHAR(100) NOT NULL,
+    patient_id INT NOT NULL,
+    status ENUM('ordered', 'ready', 'delivered') NOT NULL,
+    FOREIGN KEY (patient_id) REFERENCES patients(patient_id),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+//add this 
+ALTER TABLE prosthetics 
+ADD COLUMN payment_status ENUM('paid', 'unpaid') NOT NULL AFTER status;
