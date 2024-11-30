@@ -1,0 +1,790 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0288d1;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.nav-links a:hover {
+  background-color: #0277bd;
+}
+
+.btn-login,
+.btn-register {
+  background-color: #01579b;
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}
+
+.btn-login:hover,
+.btn-register:hover {
+  background-color: #013c7e;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("hero-image.jpg") no-repeat center center/cover;
+  color: white;
+  height: 75vh;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  padding: 1rem 2rem;
+  background-color: #ff6f00;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #e65100;
+}
+
+/* About Section */
+.about {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f1f8e9;
+  color: #2e7d32;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Services Section */
+.services {
+  padding: 2rem;
+  background-color: #e3f2fd;
+  text-align: center;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 280px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #0288d1;
+  margin-bottom: 0.5rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 2rem;
+  background-color: #eceff1;
+  text-align: center;
+}
+
+.testimonial {
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+/* Footer */
+footer {
+  padding: 1rem;
+  background-color: #0288d1;
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  color: #ffd600;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+/* About Us Header */
+.about-header {
+  background: url("about-header.jpg") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.about-header-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.about-header-content p {
+  font-size: 1.2rem;
+}
+
+/* Mission Section */
+.mission {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.mission h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.mission p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Team Section */
+.team {
+  padding: 2rem;
+  text-align: center;
+  background-color: #e3f2fd;
+}
+
+.team h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.team-card {
+  width: 250px;
+  text-align: center;
+}
+
+.team-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.team-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #0288d1;
+}
+
+/* Values Section */
+.values {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f1f8e9;
+}
+
+.values h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.values ul {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.values ul li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.values ul li strong {
+  color: #2e7d32;
+}
+/* General Styling */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+}
+
+/* About Us Header */
+.about-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("about-header.jpg") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.about-header-content h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.about-header-content p {
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Mission Section */
+.mission {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #fafafa;
+  border-bottom: 2px solid #ddd;
+}
+
+.mission h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #0288d1;
+  font-weight: bold;
+}
+
+.mission p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Team Section */
+.team {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #f1f8e9;
+  border-bottom: 2px solid #ddd;
+}
+
+.team h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.team-members {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.team-card {
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.team-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.team-card h3 {
+  font-size: 1.4rem;
+  margin: 1rem 0 0.5rem;
+  color: #0288d1;
+}
+
+.team-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* Values Section */
+.values {
+  padding: 4rem 2rem;
+  background-color: #e3f2fd;
+  text-align: center;
+}
+
+.values h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #0288d1;
+  font-weight: bold;
+}
+
+.values ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.values ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.values ul li strong {
+  font-size: 1.3rem;
+  color: #0288d1;
+  margin-right: 0.5rem;
+}
+
+.values ul li::before {
+  content: "✔";
+  color: #0288d1;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  padding: 2rem;
+  background-color: #0288d1;
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  color: #ffca28;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+/* Services Header */
+.services-header {
+  background: url("services-header.jpg") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.services-header-content h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.services-header-content p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* Services List */
+.service-list {
+  padding: 3rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.service-list h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #0277bd;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  color: #0288d1;
+}
+
+.service-card p {
+  font-size: 1rem;
+  padding: 0 1rem 1rem;
+  color: #666;
+}
+
+/* Call-to-Action Section */
+.cta {
+  padding: 3rem;
+  text-align: center;
+  background-color: #e3f2fd;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #0288d1;
+}
+
+.cta p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.btn-primary {
+  padding: 1rem 2rem;
+  background-color: #ff6f00;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #e65100;
+}
+/* Appointment Header */
+.appointment-header {
+  background: url("appointment-header.jpg") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.appointment-header-content h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.appointment-header-content p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* Appointment Form Section */
+.appointment-form {
+  padding: 3rem;
+  background-color: #f9f9f9;
+  max-width: 900px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.appointment-form h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #0277bd;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.form-group button {
+  padding: 1rem 2rem;
+  background-color: #ff6f00;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #e65100;
+}
+
+/* Confirmation Section */
+.confirmation {
+  padding: 3rem;
+  background-color: #e3f2fd;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 900px;
+  border-radius: 10px;
+}
+
+.confirmation h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #0288d1;
+}
+
+.confirmation p {
+  font-size: 1.2rem;
+  color: #555;
+}
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #0277bd;
+  padding: 1.5rem 2rem;
+  color: white;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.navbar .nav-links li {
+  margin-left: 2rem;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.navbar .nav-links .active {
+  border-bottom: 2px solid #fff;
+}
+
+.navbar .logo h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Hero Section */
+.contact-hero {
+  background: url("contact-hero-bg.jpg") no-repeat center center/cover;
+  padding: 6rem 2rem;
+  text-align: center;
+  color: rgb(124, 210, 250);
+}
+
+.contact-hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-hero-content p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Contact Info Section */
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background-color: #ffffff;
+}
+
+.contact-info-item {
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-item i {
+  font-size: 3rem;
+  color: #0277bd;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info-item h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #0277bd;
+}
+
+.contact-info-item p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.contact-info-item iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-item a {
+  color: #0277bd;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-info-item a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form Section */
+.contact-form {
+  padding: 3rem 2rem;
+  background-color: #f9f9f9;
+  max-width: 900px;
+  margin: 3rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #0277bd;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.form-group label {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.form-group button {
+  padding: 1rem 2rem;
+  background-color: #0288d1;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #0277bd;
+}
+
+/* Footer Section */
+footer {
+  background-color: #0277bd;
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+}
